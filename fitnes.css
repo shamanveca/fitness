@@ -1,0 +1,516 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box; /* Делает ограничения размеров элементов по их границе */
+    scroll-behavior: smooth;
+    overflow-anchor: none; /* Запоминает положение на странице и после обновления автоматически прокручивает к тому же элементу */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.big_conteiner{
+    padding-left: 65px;
+    padding-right: 55px;
+    padding-top: 45px;
+}
+
+.header_fon{
+    background-color: rgb(242, 242, 242);
+    border-radius: 50px;
+    width: 1500px;
+    height: 1024px;
+}
+
+nav{
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+.nav_logo{
+    margin-left: 90px;
+}
+
+.nav_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.nav_nav_link{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 550;
+    color: rgb(156, 156, 156);
+    position: relative;
+}
+
+.nav_nav_link::after{
+    position: absolute;
+    content: '';
+    left: 50%; /* смещение чтобы начиналось подчеркивание из центра */
+    transform: translateX(-50%); /* смещение чтобы начиналось подчеркивание из центра */
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(156, 156, 156);
+    transition: 0.3s;
+}
+
+.nav_nav_link:hover::after{ /* Делаем собственное подчеркивание */
+    width: 100%;
+}
+
+.nav_nav_list2{
+    margin-left: 51px;
+    margin-right: 51px;
+}
+
+.nav_year_item{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgba(81, 81, 81, 0.04); /* Естественная обводка текста по контуру */
+    margin-right: 133px;
+}
+
+.nav_year_item:hover{
+    cursor: default;
+}
+
+
+.header_info{
+    background-image: url(./Foto/foto-header.png);
+    height: 919px;
+    background-size: 1500px 919px;
+    position: relative;
+}
+
+.bro_absolute{
+    position: absolute;
+    rotate: -90deg;
+    top: 190px;
+    left: 800px;
+}
+
+.bro_item{
+    font-family: 'Lato', sans-serif;
+    font-size: 450px;
+    line-height: 540px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.23);
+}
+
+.headr_text1{
+    padding-top: 669px;
+    margin-left: 150px;
+}
+
+.text1{
+    font-family: 'Lato', sans-serif;
+    font-size: 140px;
+    line-height: 168px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.headr_text2{
+    margin-left: 155px;
+}
+
+.text2{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: rgb(197, 197, 197);
+}
+
+.onas_info{
+    width: 1500px;
+    text-align: center;
+    margin-top: 156px;
+    margin-bottom: 71px;
+}
+
+.onas_zag{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    margin-bottom: 59px;
+}
+
+.onas_text{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 300;
+    color: rgb(40, 40, 40);
+    margin-bottom: 179px;
+}
+
+.onas_fon{
+    background-color: rgb(242, 242, 242);
+    border-radius: 50px;
+    width: 1500px;
+    height: 1024px;
+    overflow: hidden;
+}
+
+.onas_text_tel_flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text_onass{
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 500;
+    color: rgb(40, 40, 40);
+}
+
+.text_onas{
+    padding-top: 122px;
+    margin-bottom: 216px;
+}
+
+.text_i_tel{
+    text-align: center;
+}
+
+.tel2{
+    padding-top: 76px;
+}
+
+.onas_fon2{
+    width: 1500px;
+    height: 507px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 50px;
+    margin-top: 71px;
+    text-align: center;
+}
+
+.fon2_zag{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 59px;
+    padding-top: 85px;
+}
+
+.fon2_text{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+.trenirovki{
+    width: 1500px;
+    height: 919px;
+    background-image: url(./Foto/fon_dama.png);
+    background-repeat: no-repeat;
+    background-size: 1500px 919px;
+    position: relative;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.tren_text{
+    font-family: 'Lato', sans-serif;
+    font-size: 140px;
+    line-height: 168px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.tren_text_abs{
+    position: absolute;
+    left: 692px;
+    top: -47px;
+}
+
+.buttonn{
+    width: 270px;
+    height: 58px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: rgb(43, 43, 43);
+    transition: 0.5s ease;
+}
+
+.buttonn:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.507);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.buttonn:active{
+    box-shadow: none;
+}
+
+.button_item{
+    margin-bottom: 20px;
+}
+
+.button_list{
+    margin-left: 230px;
+    margin-top: 134px;
+}
+
+.gor_line1, .gor_line2, .gor_line3, .gor_line4, .gor_line5, .gor_line6, 
+.gor_line7, .gor_line8, .gor_line9, .gor_line10, .gor_line11, .gor_line12, 
+.vert_line1, .vert_line2, .vert_line3, .vert_line4, .vert_line5, .vert_line6, .vert_line7{
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.gor_line1{
+    top: 58.5px;
+    left: 365px;
+    width: 362px;
+}
+
+.vert_line1{
+    height: 87px;
+    top: 60px;
+    left: 365px;
+}
+
+.gor_line2{
+    width: 36px;
+    top: 162px;
+    left: 500px;
+}
+
+.gor_line3{
+    width: 36px;
+    top: 242px;
+    left: 193px;
+}
+
+.gor_line4{
+    width: 36px;
+    top: 242px;
+    left: 500px;
+}
+
+.gor_line5{
+    width: 36px;
+    top: 320px;
+    left: 193px;
+}
+
+.gor_line6{
+    width: 36px;
+    top: 320px;
+    left: 500px;
+}
+
+.gor_line7{
+    width: 36px;
+    top: 397.5px;
+    left: 193px;
+}
+
+.gor_line8{
+    width: 36px;
+    top: 397.5px;
+    left: 500px;
+}
+
+.gor_line9{
+    width: 36px;
+    top: 475.5px;
+    left: 193px;
+}
+
+.gor_line10{
+    width: 36px;
+    top: 475.5px;
+    left: 500px;
+}
+
+.gor_line11{
+    width: 36px;
+    top: 553.5px;
+    left: 500px;
+}
+
+.gor_line12{
+    width: 364px;
+    top: 706px;
+}
+
+.vert_line2{
+    height: 78px;
+    top: 163px;
+    left: 536px;
+}
+
+.vert_line3{
+    height: 77px;
+    top: 243px;
+    left: 193px;
+}
+
+.vert_line4{
+    height: 77px;
+    top: 320px;
+    left: 536px;
+}
+
+.vert_line5{
+    height: 77px;
+    top: 398px;
+    left: 193px;
+}
+
+.vert_line6{
+    height: 77px;
+    top: 476px;
+    left: 536px;
+}
+
+.vert_line7{
+    height: 124px;
+    top: 582px;
+    left: 365px;
+}
+
+.tren_textt{
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.tren_text2{
+    margin-left: 100px;
+    margin-top: 187px;
+}
+
+.otzivi{
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.otziv{
+    width: 414px;
+    height: 444px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(243, 241, 246);
+    padding-left: 40px;
+}
+
+.otziv_img{
+    margin-top: 34px;
+    margin-bottom: 37px;
+}
+
+.text_otz{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(43, 43, 43);
+}
+
+.otziv_name{
+    margin-top: 60px;
+}
+
+.name_otz{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: rgb(43, 43, 43);
+}
+
+.footer{
+    width: 1500px;
+    height: 221px;
+    border-radius: 50px;
+    background-color: rgb(255, 172, 165);
+    margin-top: 37px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.footer_text{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding-top: 34px;
+}
+
+.footer_info{
+   font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: rgb(255, 255, 255); 
+    padding-top: 19px;
+}
+
+.footer_link_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.footer_link_flexcont{
+    margin-right: 10px;
+}
